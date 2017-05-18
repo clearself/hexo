@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: clearself 的博客
+title: clearself的博客
 subtitle:
 description:
-author: 付雷养
+author: 付雷洋
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://clearself.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
