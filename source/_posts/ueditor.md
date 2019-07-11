@@ -1,9 +1,10 @@
 ---
 title: ueditor富文本编辑器前后端分离使用
-date: 2019-07-11 15:20:23
+date: 2019-07-11 15:49:20
 description: "项目中使用ueditor富文本编辑器前后端分离遇到的问题"
 tags: ueditor
 ---
+
 ### 经过测试，前后端分离初始化地址必须是一个servlet，不能是springboot中controller中的 方法，因为springboot中的httpservletrequest是封装过的。
 详情可参考地址：https://www.cnblogs.com/swtjavaspace/p/5871177.html
 以为终于可以结束了，然而并不是，点击上传图片老提示没有发现上传的数据，再次debug源码，spring mvc对request进行了包装，导致无法获取上传数据，无语了，那就直接换servlet处理，上代码：
@@ -425,5 +426,3 @@ public final class ConfigManager {
             'print', 'preview', 'searchreplace', 'drafts', 'help'
         ]]
    ``` 
-  
-
